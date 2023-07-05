@@ -1,4 +1,4 @@
-<h1 align="center">Hi, <img src="https://github.com/wervlad/wervlad/assets/24524555/766d336d-b87d-44ba-807c-c51de2bc6b4d" width="28px" alt="👋"> I am Nayan Here</h1>
+<h1 align="center">Hey, <img src="https://github.com/wervlad/wervlad/assets/24524555/766d336d-b87d-44ba-807c-c51de2bc6b4d" width="28px" alt="👋"> I am Nayan Here</h1>
 <h3 align="center"> Learning Stuffs In IT <span></></span> </h3>
 <img align="right" alt="Coding" width="200" src="https://i.giphy.com/media/mQ8l6sRbzPKo0/giphy.webp">
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Nayan808&label=Profile%20views&color=0e75b6&style=flat" alt="NayanHore" /> </p>
