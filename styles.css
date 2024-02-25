@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    /* background-color: #333; */
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+
+}
+
+header h1 {
+    margin-left: 4vw;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 3vh;
+}
+
+header h1 a {
+    font-size: 6vh;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggler {
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* Add a transition for smooth fading */
+    cursor: pointer;
+
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: overline;
+}
+
+.home_image1_data p1 {
+    font-size: 3vh;
+}
+
+#typewriter-text {
+    font-family: monospace;
+    font-size: 10vh;
+    white-space: pre;
+    overflow: hidden;
+    border-right: 2px solid #000;
+}
+
+section {
+    padding: 20px;
+}
+
+section#Hoarding {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* background-image: url('/HomeImg1.png'); */
+    /* Add the path to your background image */
+    background-size: cover;
+    /* Cover the entire section with the background image */
+    background-position: center;
+    /* Center the background image */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 60vh;
+    border-radius: 1vh;
+    background-color: #d4d2d295;
+/* background-size:100%; */
+    /* background-attachment: fixed; */
+}
+
+.home_image1_data {
+    margin-top: 8%;
+}
+
+.home_image1_data p {
+    font-size: 5vh;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+}
+
+.home_image1_data p3 {
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.home_image1_data p4 {
+    color: red;
+    font-size: 10vw;
+    font-weight: bolder;
+
+}
+
+.home_image1_data h2 {
+    color: rgb(255, 255, 255);
+}
+
+
+/* marquee */
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.marquee-content {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    background-color: yellow;
+    color: red;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Categories Screen */
+#category{
+    align-items: center;
+        text-align: center;
+}
+#category h2{
+    font-size: 5vh;
+    font-weight: bold;
+    color: red;
+
+}
+img {
+    width: 100%;
+}
+
+.back a {
+    color: #000;
+    margin: auto;
+}
+
+.caption,
+h1 {
+    font-family: monospace;
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+}
+
+.date {
+    font-size: 0.75em;
+}
+
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
+
+.container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+    width: 250px;
+    height: 250px;
+    background-color:white;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+#content {
+    text-align: center;
+}
+
+/*  Contact */
+#contact{
+    background-color: #d4d2d295;
+    text-align: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+#contact h2{
+    font-size: 5vh;
+    font-weight: bold;
+    color: red;
+
+}
+
+#contact a{
+    text-decoration: none;
+    color:red;
+}
+
+/* Footer*/
+
+footer {
+    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+/* Responsivness */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: none;
+        /* Hide the navigation links on smaller screens */
+        flex-direction: column;
+        /* Stack the links vertically */
+    }
+
+    .menu-toggler {
+        display: inline;
+        /* Show the toggler on smaller screens */
+        cursor: pointer;
+    }
+
+    .menu-toggler.hidden {
+        opacity: 0;
+        pointer-events: none;
+        /* Make the hidden toggler not clickable */
+    }
+
+    section#Hoarding {
+        margin: 10px;
+        height: auto;
+    }
+
+    .home_image1_data {
+        margin-top: 10%;
+    }
+
+    .home_image1_data p {
+        font-size: 3vh;
+    }
+
+    .home_image1_data p3,
+    .home_image1_data p4 {
+        font-size: 4vh;
+    }
+    .marquee-container {
+        display: block; /* Show on smaller screens */
+    }
+
+    .marquee-content {
+        animation: marquee 5s linear infinite; /* Adjust speed for smaller screens */
+    }
+}
